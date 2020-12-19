@@ -1,12 +1,6 @@
 import fs from 'fs'
 import { CsvFileReader } from './CsvFileReader';
-
-// enum - enumeration
-enum MatchResult {
-    HomeWin = 'H',
-    AwayWin = 'A',
-    Draw = 'D'
-}
+import { MatchResult } from './MatchResult';
 
 const reader = new CsvFileReader('football.csv')
 reader.read()
